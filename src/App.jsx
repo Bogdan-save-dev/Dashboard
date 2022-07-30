@@ -70,7 +70,7 @@ function App() {
               <Route path="/calendar" element="calendar" />
               <Route path="/color-picker" element="color-picker" />
               {/* charts */}
-              <Route path="/liner" element="line" />
+              <Route path="/line" element="line" />
               <Route path="/area" element="area" />
               <Route path="/bar" element="bar" />
               <Route path="/pie" element="pie" />
