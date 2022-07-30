@@ -1,6 +1,6 @@
 import './App.css'
 
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter, Route, Routes } from 'react-router-dom'
 import { TooltipComponent } from '@syncfusion/ej2-react-popups'
 import { FiSettings } from 'react-icons/fi'
 
@@ -45,12 +45,40 @@ function App() {
               activeMenu ? ' md:ml-72 ' : 'flex-2'
             }`}
           >
-            <div className="fixed md:static 
+            <div
+              className="fixed md:static 
               bg-main-bg dark:bg-main-dark-bg
               navbar w-full
-              ">
-                navbar
-              </div>
+              "
+            >
+              navbar
+            </div>
+          </div>
+
+          <div>
+            <Routes>
+              {/* Dashboard */}
+              <Route path="/" element="ECommerce" />
+              <Route path="/ecommerce" element="ECommerce" />
+              {/* Pages */}
+              <Route path="/orders" element="Orders" />
+              <Route path="/employees" element="Employees" />
+              <Route path="/customers" element="Customers" />
+              {/* Apps */}
+              <Route path="/kanban" element="kanban" />
+              <Route path="/editor" element="editor" />
+              <Route path="/calendar" element="calendar" />
+              <Route path="/color-picker" element="color-picker" />
+              {/* charts */}
+              <Route path="/liner" element="line" />
+              <Route path="/area" element="area" />
+              <Route path="/bar" element="bar" />
+              <Route path="/pie" element="pie" />
+              <Route path="/financial" element="financial" />
+              <Route path="/pyramid" element="pyramid" />
+              <Route path="/stacked" element="stacked" />
+              <Route path="/color-mapping" element="color-mapping" />
+            </Routes>
           </div>
         </div>
       </BrowserRouter>
