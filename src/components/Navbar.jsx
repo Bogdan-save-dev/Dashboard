@@ -63,6 +63,7 @@ const NavBar = () => {
   "
     >
       <NavButton
+        className="md:hidden"
         title="Menu"
         customFunc={() => setActiveMenu((prevActiveMenu) => !prevActiveMenu)}
         color="blue"
