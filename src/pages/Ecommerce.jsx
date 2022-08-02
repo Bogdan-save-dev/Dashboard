@@ -3,6 +3,7 @@ import React from 'react'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { Button } from '../components'
+import { Revenue } from '../components/Revenue'
 
 import {
   earningData,
@@ -76,6 +77,8 @@ function Ecommerce() {
           ))}
         </div>
       </div>
+
+      <Revenue />
     </div>
   )
 }
