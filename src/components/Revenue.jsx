@@ -1,5 +1,6 @@
 import React from 'react'
 import { GoPrimitiveDot } from 'react-icons/go'
+import { BsCurrencyDollar } from 'react-icons/bs'
 
 export const Revenue = () => {
   return (
@@ -38,6 +39,31 @@ export const Revenue = () => {
                 </span>
                 <span>Budget</span>
               </p>
+            </div>
+          </div>
+
+          <div className="mt-10 flex gap-10 flex-wrap justify-center">
+            <div className="border-r-2 border-color m-4 pr-10">
+              <div>
+                <p>
+                  <span className="text-3xl font-semibold">$50000</span>
+                  <span
+                    className="p-1.5 cursor-pointer rounded-full
+                text-white bg-green-400 ml-3 text-xs
+                hover:drop-shadow-xl"
+                  >
+                    26%
+                  </span>
+                </p>
+                <p className="text-gray-500 mt-1">Budget</p>
+              </div>
+
+              <div className="mt-8">
+                <p>
+                  <span className="text-3xl font-semibold">$20000</span>
+                </p>
+                <p className="text-gray-500 mt-1">Expense</p>
+              </div>
             </div>
           </div>
         </div>
