@@ -1,6 +1,8 @@
 import React from 'react'
 import { GoPrimitiveDot } from 'react-icons/go'
 import { BsCurrencyDollar } from 'react-icons/bs'
+import SparkLine from './Charts/SparkLine'
+import { SparklineAreaData } from '../data/dummy'
 
 export const Revenue = () => {
   return (
@@ -63,6 +65,18 @@ export const Revenue = () => {
                   <span className="text-3xl font-semibold">$20000</span>
                 </p>
                 <p className="text-gray-500 mt-1">Expense</p>
+              </div>
+
+              <div className="mt-5">
+                <SparkLine
+                  currentColor="blue"
+                  id="line-sparkline"
+                  type="Line"
+                  height="80px"
+                  width="250px"
+                  data={SparklineAreaData}
+                  color="blue"
+                />
               </div>
             </div>
           </div>
