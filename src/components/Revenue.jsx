@@ -4,6 +4,7 @@ import { BsCurrencyDollar } from 'react-icons/bs'
 import SparkLine from './Charts/SparkLine'
 import { SparklineAreaData } from '../data/dummy'
 import Button from './Button'
+import Stacked from './Charts/Stacked'
 
 export const Revenue = () => {
   return (
@@ -87,6 +88,10 @@ export const Revenue = () => {
                   borderRadius="10px"
                 />
               </div>
+            </div>
+
+            <div>
+              <Stacked width="320px" height="360px" />
             </div>
           </div>
         </div>
