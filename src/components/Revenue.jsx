@@ -3,6 +3,7 @@ import { GoPrimitiveDot } from 'react-icons/go'
 import { BsCurrencyDollar } from 'react-icons/bs'
 import SparkLine from './Charts/SparkLine'
 import { SparklineAreaData } from '../data/dummy'
+import Button from './Button'
 
 export const Revenue = () => {
   return (
@@ -76,6 +77,14 @@ export const Revenue = () => {
                   width="250px"
                   data={SparklineAreaData}
                   color="blue"
+                />
+              </div>
+              <div className="mt-10">
+                <Button
+                  color="white"
+                  bgColor="blue"
+                  text="Download Report"
+                  borderRadius="10px"
                 />
               </div>
             </div>
