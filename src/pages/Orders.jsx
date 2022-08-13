@@ -18,8 +18,18 @@ import { ordersData, contextMenuItems, ordersGrid } from '../data/dummy'
 
 function Orders() {
   return (
-    <div>
+    <div
+      className="m-2 p-2 bg-white rounded-3xl
+    md:m-10  md:p-10"
+    >
       <Header category="Page" title="Orders" />
+      <GridComponent id="gridcomp" dataSource={ordersData}>
+        <ColumnsDirective>
+          {ordersGrid.map((item, idx) => (
+            <ColumnDirective key={item + idx} {...item} />
+          ))}
+        </ColumnsDirective>
+      </GridComponent>
     </div>
   )
 }
